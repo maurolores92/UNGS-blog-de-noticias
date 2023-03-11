@@ -1,0 +1,323 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Barra de navegacion*/
+
+nav {
+    display: flex;
+    text-align: center;
+    background-color: #e1e1e1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+li {
+    margin: 10px 20px;
+}
+
+i {
+    color: #000;
+}
+
+.button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    }
+
+.button:focus,
+.button:hover {
+    color: #fff;
+}
+
+.button:focus:after,
+.button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+/* Titulo principal y noticia principal*/
+
+.imagen-fondo {
+    background: url(../img/twitch-kings-league.svg);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    height: 200px;
+    padding-top: 4rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.h2-principal {
+    color: #000;
+}
+.noticias-index {
+    max-height: 700px;
+    width: 70%;
+    background-color:rgb(218, 218, 218);
+    display: flex;
+    margin-top: 20px;
+    border-radius: 1rem;
+    border: solid 1px;
+    box-shadow: 0 0 10px black;
+    transition: all 0.3s ease 0s;
+}
+
+.noticias-index:hover {
+    box-shadow: 0px 15px 20px #ff6900;
+    color: #fff;
+    transform: translateY(-7px);
+    }
+
+    .noticias-index:active {
+    transform: translateY(-1px);
+    }
+
+.noticia-principal {
+    text-align: center;
+}
+
+.noticia-principal-enlace {
+    text-decoration: none;
+}
+
+.imagen-principal {
+    text-align: center;
+    margin: 20px;
+    width: 800px;
+    height: 500px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px black;
+}
+
+
+h2 {
+    padding: 30px;
+    color: black;
+}
+
+/*tarjetas de las noticias*/
+
+section {
+    margin: 60px auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-content: space-around;
+}
+
+.tarjeta {
+    width: 400px;
+    margin: 20px;
+    border-radius: 1rem;
+    border: solid 1px;
+    background: rgba(0,0,0,.1);
+    box-shadow: 0 0 10px black;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+}
+
+.tarjeta:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    }
+
+.tarjeta:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+    }
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+h3 {
+    margin: 30px;
+    text-align: center;
+    color: black;
+}
+
+.descripcion-tarjeta {
+    margin: 30px;
+    color: black;
+}
+
+.btn {
+    width: 150px;
+    padding: 8px;
+    margin-bottom: 20px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+
+    .btn:hover {
+    background-color: #fcb900;
+    box-shadow: 0px 15px 20px #ff6900;;
+    color: #fff;
+    transform: translateY(-7px);
+    }
+
+    .btn:active {
+    transform: translateY(-1px);
+    }
+
+    /*PAGINAS de la KINGSLEAGUE*/
+
+    .imagen-fondo-kl {
+        background: url(../img/twitch-kings-league.svg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        }
+
+    .page-noticias {
+        text-align: center;
+    width: 85%;
+    margin-top: 20px;
+    transition: all 0.3s ease 0s;
+    }
+
+    .parrafos-noticias {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .imagen-kl {
+        text-align: center;
+        margin: 70px;
+        width: 850px;
+        height: 550px;
+        border-radius: rem;
+        box-shadow: 0 0 10px black;
+    }
+
+/* FOOTER */
+
+.footer-grid {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1px;
+    box-shadow: 0 0 10px black;
+}
+.logo-footer {
+    width: 250px;
+}
+.descripcion-footer {
+    font-size: 1.2rem;
+    text-align:justify;
+}
+    @media screen and (max-width:1200px) {
+        .imagen-principal {
+            width: 500px;
+            height: 350px;
+        }
+        }
+
+    @media screen and (max-width:780px) {
+        .imagen-principal {
+            width: 350px;
+            height: 250px;
+        }
+        .imagen-fondo {
+            height: 700px;
+        }
+        .noticias-index {
+            width: 80%;
+        }
+        }
+
+    @media screen and (max-width:450px) {
+        .imagen-principal {
+            width: 300px;
+            height: 250px;
+        }
+        .imagen-fondo {
+            height: 700px;
+        }
+        .noticias-index {
+            width: 80%;
+        }
+        }
