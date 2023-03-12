@@ -153,9 +153,6 @@ section {
     margin: 60px auto;
     padding: 10px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content:space-around;
-    align-content: space-around;
 }
 
 .tarjeta {
@@ -294,22 +291,87 @@ h3 {
             width: 500px;
             height: 350px;
         }
+        .tarjeta {
+            width: 400px;
+            margin: 5px;
+        }
+        .descripcion-tarjeta {
+            margin: 5px;
+        }
+        section {
+            flex-flow: row wrap;
+            justify-content:space-around;
+        }
         }
 
-    @media screen and (max-width:780px) {
+    @media screen and (max-width:860px) {
+        
         .imagen-principal {
-            width: 350px;
-            height: 250px;
+            width: 400px;
+            height: 300px;
         }
         .imagen-fondo {
-            height: 700px;
+            height: 750px;
         }
         .noticias-index {
             width: 80%;
         }
+        .tarjeta {
+            width: 300px;
+            margin: 5px;
+            margin-top: 15px
+        }
+        .descripcion-tarjeta {
+            margin: 5px;
+        }
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
         }
 
-    @media screen and (max-width:450px) {
+    @media screen and (max-width:659px) {
+        
+        .imagen-principal {
+            width: 400px;
+            height: 300px;
+        }
+        .imagen-fondo {
+            height: 750px;
+        }
+        .noticias-index {
+            width: 80%;
+        }
+        .tarjeta {
+            width: 250px;
+            margin: 5px;
+            margin-top: 15px
+        }
+        .descripcion-tarjeta {
+            margin: 5px;
+        }
+        .descripcion-tarjeta {
+            display: none;
+        }
+        .imagen-tarjeta {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+        .descripcion-footer {
+            font-size: 1rem;
+        }
+        .tarjeta {
+            margin: 5px;
+            font-size: 12px;
+        }
+        }
+
+    @media screen and (max-width:560px) {
         .imagen-principal {
             width: 300px;
             height: 250px;
@@ -318,6 +380,16 @@ h3 {
             height: 700px;
         }
         .noticias-index {
-            width: 80%;
+            width: 90%;
+        }
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+        .descripcion-footer {
+            font-size: 1rem;
+        }
+        .tarjeta {
+            margin: 5px;
+            font-size: 12px;
         }
         }
