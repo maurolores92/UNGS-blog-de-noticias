@@ -20,6 +20,9 @@ nav {
     display: flex;
     text-align: center;
     background-color: #e1e1e1;
+
+    flex-flow: row wrap;
+    justify-content:space-around;
 }
 
 .menu {
@@ -323,6 +326,20 @@ h3 {
         .parrafos-noticias {
             font-size: 1rem;
         }
+        .footer-grid {
+            grid-template-columns: 1fr;
+        }
+        .redes-sociales {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 0 auto;
+            margin-top: 10px;
+            
+        }
+        .iconos-redes {
+            padding-right: 30px;
+        }
         }
 
     @media screen and (max-width:860px) {
@@ -466,6 +483,17 @@ h3 {
                 width: 90%;
                 height: 240px;
                 margin: 20px;
+            }
+            .redes-sociales {
+                display: flex;
+                flex-direction: row;
+                list-style-type: none;
+                margin: 0 auto;
+                margin-top: 10px;
+
+            }
+            li {
+                margin: 10px 0px;
             }
             }
             
