@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
 * {
     margin: 0 auto;
     box-sizing: border-box;
 }
 body {
     background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -84,7 +87,7 @@ i {
 /* Titulo principal y noticia principal*/
 
 .imagen-fondo {
-    background: url(../img/twitch-kings-league.svg);
+    background: url(../img/fondoprincipal.jpg);
     background-size: cover;
     background-position: center;
     height: 900px;
@@ -97,10 +100,12 @@ h1 {
     padding-top: 4rem;
     text-align: center;
     color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(221, 220, 220);
 }
 
 .h2-principal {
     color: #000;
+    text-shadow: 2px 2px 5px rgb(85, 85, 85);
 }
 .noticias-index {
     max-height: 700px;
@@ -235,7 +240,7 @@ h3 {
     /*PAGINAS de la KINGSLEAGUE*/
 
     .imagen-fondo-kl {
-        background: url(../img/twitch-kings-league.svg);
+        background: url(../img/fondoprincipal.jpg);
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -264,7 +269,7 @@ h3 {
     .imagen-kl {
         text-align: center;
         margin: 70px;
-        width: 850px;
+        width: 70%;
         height: 550px;
         border-radius: rem;
         box-shadow: 0 0 10px black;
@@ -286,6 +291,11 @@ h3 {
     font-size: 1.2rem;
     text-align:justify;
 }
+
+.h1-noticias {
+    font-size: 50px;
+    height: 100%;
+}
     @media screen and (max-width:1200px) {
         .imagen-principal {
             width: 500px;
@@ -301,6 +311,20 @@ h3 {
         section {
             flex-flow: row wrap;
             justify-content:space-around;
+        }
+        .imagen-kl {
+            width: 80%;
+            height: 450px;
+            margin: 20px;
+        }
+
+        .h1-noticias {
+            font-size: 30px;
+            height: 100%;
+        }
+
+        .parrafos-noticias {
+            font-size: 1rem;
         }
         }
 
@@ -327,6 +351,13 @@ h3 {
         .footer-grid {
             grid-template-columns: 1fr;
         }
+
+        /* hojas de noticias 1-5 */
+
+        .imagen-kl {
+            width: 80%;
+            height: 350px;
+        }
         }
 
     @media screen and (max-width:659px) {
@@ -344,10 +375,8 @@ h3 {
         .tarjeta {
             width: 250px;
             margin: 5px;
-            margin-top: 15px
-        }
-        .descripcion-tarjeta {
-            margin: 5px;
+            margin-top: 15px;
+            font-size: 12px;
         }
         .descripcion-tarjeta {
             display: none;
@@ -365,9 +394,12 @@ h3 {
         .descripcion-footer {
             font-size: 1rem;
         }
-        .tarjeta {
-            margin: 5px;
-            font-size: 12px;
+
+        /* hojas de noticias 1-5 */
+
+        .imagen-kl {
+            width: 90%;
+            height: 300px;
         }
         }
 
@@ -393,3 +425,50 @@ h3 {
             font-size: 12px;
         }
         }
+
+        @media screen and (max-width: 559px){
+
+            .tarjeta {
+                width: 200px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+            .imagen-tarjeta {
+                height: 150px;
+                display: flex;
+                padding: 3px;
+                border-radius: 1rem;
+            }
+            .btn {
+                width: 150px;
+                padding: 2px;
+                margin-bottom: 10px;
+                padding: 10px;
+                }
+                h3 {
+                    font-size: 12px;
+                }
+            }
+
+        @media screen and (max-width: 456px){
+            .tarjeta {
+                width: 170px;
+                margin-top: 15px;
+                font-size: 12px;
+            }
+            .imagen-tarjeta {
+                height: 120px;
+                padding: 3px;
+                border-radius: 1rem;
+            }
+            h3 {
+                font-size: 12px;
+                margin: 15px;
+            }
+            .imagen-kl {
+                width: 90%;
+                height: 240px;
+                margin: 20px;
+            }
+            }
+            
