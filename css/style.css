@@ -159,7 +159,7 @@ h2 {
 /*tarjetas de las noticias*/
 
 section {
-    margin: 60px auto;
+    margin: 20px auto;
     padding: 10px;
     display: flex;
 }
@@ -259,7 +259,6 @@ h3 {
     }
 
     .parrafos-noticias {
-        font-weight: bold;
         font-size: 1.5rem;
         color: #fff;
         padding-bottom: 30px;
